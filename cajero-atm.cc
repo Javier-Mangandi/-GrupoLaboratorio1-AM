@@ -51,12 +51,10 @@ int main()
 {
     // El saldo inicial de la cuenta debe ser de $1000 (usando tipo float)
     float saldoCuenta = 1000.0f;
-
+    std:coout << "===== BIENVENIDO AL CAJERO AUTOMATICO =====" << std::endl;
     std::cout << "=== ESTADO INICIAL DEL ATM ===" << std::endl;
     ConsultarSaldo(saldoCuenta);
 
-    // Demostrar funcionamiento utilizando datos quemados (hardcoded)
-    // Mostrar el saldo antes y despues de cada operación
 
     std::cout << "\n--- OPERACION 1: DEPOSITO VALIDO ---" << std::endl;
     std::cout << "(Antes) ";
@@ -86,6 +84,7 @@ int main()
 
     std::cout << "\n--------------------------------------------------" << std::endl;
     std::cout << "=== ESTADO FINAL DEL ATM ===" << std::endl;
+    std::cout << "=============================================" << std::endl;
     ConsultarSaldo(saldoCuenta);
 
     return 0;
